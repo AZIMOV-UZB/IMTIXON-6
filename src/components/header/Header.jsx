@@ -33,7 +33,7 @@ const Header = () => {
         <nav className="navbar 
          flex items-center justify-between">
           <div className="navbar__logo">
-           <NavLink to={"home"}><img className='navbar__logo' src={navlogo} alt="foto" /></NavLink> 
+           <NavLink to={""}><img className='navbar__logo' src={navlogo} alt="foto" /></NavLink> 
           </div>
           <div className='border-emerald-300 border-2 rounded-md search__bag dark:bg-black
 

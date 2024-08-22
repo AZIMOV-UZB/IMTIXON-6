@@ -1,0 +1,17 @@
+.shops{
+&__text{
+    font-weight: 600;
+}
+    &__card{
+        margin: 50px 0;
+        width: 500px !important;
+    }
+    &__wrapper {
+        margin-top: 50px;
+     display: flex !important;
+     overflow: auto !important;
+     gap: 20px;
+
+
+    }
+}

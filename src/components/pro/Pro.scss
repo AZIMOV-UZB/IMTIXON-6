@@ -1,0 +1,71 @@
+.pro{
+
+&__wrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+&__title{
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+}
+&__card{
+    border-radius: 15px;
+    height: 250px;
+    width: calc(33.3% - 30px);
+    padding: 70px 50px;
+}
+&__btn{
+    background-color: green;
+    width: 100px;
+    padding:5px 10px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+}
+
+.one{
+    background: url("../../assets/piyoz.svg")no-repeat center/cover;
+}
+
+
+.two{
+    background: url("../../assets/key.svg")no-repeat center/cover;
+}
+
+.threr{
+    background: url("../../assets/box.svg")no-repeat center/cover;
+}
+
+
+
+@media (max-width:1050px){
+.pro{
+    &__wrapper{
+        gap: 20px;
+    }
+&__card{
+ width: calc(50% - 10px);
+}
+}
+}
+
+
+
+
+@media (max-width:1050px){
+    .pro{
+        &__wrapper{
+            flex-direction: column;
+            gap: 20px;
+        }
+    &__card{
+     width: 100%;
+    }
+    }
+    }
+    

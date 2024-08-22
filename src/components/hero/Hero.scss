@@ -1,0 +1,38 @@
+.hero{
+    margin-top: -100px !important;
+    background: url("../../assets/Hero.png") no-repeat center/cover;
+    width: 100%;
+    padding: 60px;
+    border-radius: 30px;
+&__title{
+    color: #253D4E !important;
+    font-size: 54px;
+    max-width: 400px;
+    font-weight: 900;
+}
+    &__text{
+        font-size: 25px !important;
+        color: #7E7E7E !important;
+    }
+    &__inp{
+        flex: 1;
+    }
+}
+
+
+
+@media ( max-width:450px){
+.hero{
+    &__title{
+        font-size: 38px;
+    }
+    padding: 20px;
+    &__inp{
+        width: 110px;
+    }
+
+    &__btn{
+        width: 100px;
+    }
+}
+}

@@ -5,6 +5,7 @@ import Home from './pages/home/Home'
 import Wishlist from './pages/wishlist/Wishlist'
 import Login from './pages/login/Login'
 import Not from './components/not-found/Not'
+import Shop from './components/shop/Shop'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout/>}>
         <Route path="" element={<Home/>}/>
+        <Route path="products/:id" element={<Shop/>}/>
         <Route path="wishlist" element={<Wishlist/>}/>
         <Route path="login" element={<Login/>}/>
         <Route path="*" element={<Not/>}/>

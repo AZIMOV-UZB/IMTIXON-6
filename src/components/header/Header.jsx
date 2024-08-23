@@ -35,7 +35,7 @@ const Header = () => {
           <div className="navbar__logo">
            <NavLink to={""}><img className='navbar__logo' src={navlogo} alt="foto" /></NavLink> 
           </div>
-          <div className='border-emerald-300 border-2 rounded-md search__bag dark:bg-black
+          <div className='border-emerald-300 border-2 bg-white rounded-md search__bag dark:bg-black
 
 	 flex items-center px-5 py-2'>
             <div className='flex gap-1 items-center px-2 text-black	  '>
@@ -47,7 +47,7 @@ const Header = () => {
               <FiSearch className='text-4xl' />
             </button>
           </div>
-          <div className='flex gap-1 p-2 border h_map  items-center rounded-md dark:text-white dark:bg-black 
+          <div className='flex gap-1 p-2 border h_map  items-center rounded-md bg-white dark:text-white dark:bg-black 
 
 '>
           <FaMapMarkerAlt className=' text-black dark:text-white dark:bg-black  ' />

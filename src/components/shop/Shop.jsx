@@ -24,17 +24,17 @@ const Shop = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mb-10 px-1">
         <div className="">
           <img
-            className="w-[350px] h-[350px] mb-4 object-contain border "
+            className="w-[350px] h-[350px] mb-4 object-contain border rounded-xl		  "
             src={data?.images[0]}
-            alt=""
+            alt="foto"
           />
           <div className="flex">
             {data?.images?.map((item, inx) => (
               <img
-                className="w-[80px] h-[80px] object-contain m-auto"
+                className="w-[50px] h-[50px] object-contain m-auto    cursor-pointer"
                 src={item}
                 key={inx}
-                alt=""
+                alt="foto"
               />
             ))}
           </div>
@@ -75,8 +75,8 @@ const Shop = () => {
               {data?.dimensions?.width}
             </button>
           </div>
-          <div className="flex gap-5">
-            <div className="flex gap-3 border w-[90px] py-[3px] rounded-[5px] items-center justify-center">
+          <div className="flex gap-5 flex-wrap">
+            <div className="flex gap-3 border	 w-[90px] py-[3px] rounded-[5px] items-center justify-center">
               <button>1</button>
               <div className="flex flex-col">
                 <button>
@@ -117,7 +117,7 @@ const Shop = () => {
             Reviews (3)
           </button>
         </div>
-        <p className="text-[15px] text-[#7E7E7E] text-start">
+        <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
           Uninhibited carnally hired played in whimpered dear gorilla koala
           depending and much yikes off far quetzal goodness and from for
           grimaced goodness unaccountably and meadowlark near unblushingly
@@ -134,29 +134,29 @@ const Shop = () => {
             <p className="text-[13px] text-[#7E7E7E] text-start desc">
               Type Of Packing
             </p>
-            <p className="text-[13px] text-[#7E7E7E] text-start desc">Color</p>
-            <p className="text-[13px] text-[#7E7E7E] text-start desc">
+            <p className="text-[13px] text-[#7E7E7E] text-start desc dark:text-white">Color</p>
+            <p className="text-[13px] text-[#7E7E7E] text-start desc dark:text-white">
               Quantity Per Case
             </p>
-            <p className="text-[13px] text-[#7E7E7E] text-start desc">
+            <p className="text-[13px] text-[#7E7E7E] text-start desc dark:text-white">
               Ethyl Alcohol
             </p>
-            <p className="text-[13px] text-[#7E7E7E] text-start desc">
+            <p className="text-[13px] text-[#7E7E7E] text-start desc dark:text-white">
               Piece In One
             </p>
           </div>
           <div className="flex flex-col gap-[10px]">
-            <p className="text-[13px] text-[#7E7E7E] text-start">Bottle</p>
-            <p className="text-[13px] text-[#7E7E7E] text-start">
+            <p className="text-[13px] text-[#7E7E7E] text-start dark:text-white">Bottle</p>
+            <p className="text-[13px] text-[#7E7E7E] text-start dark:text-white">
               Green, Pink, Powder Blue, Purple
             </p>
-            <p className="text-[13px] text-[#7E7E7E] text-start">100ml</p>
-            <p className="text-[13px] text-[#7E7E7E] text-start">70%</p>
-            <p className="text-[13px] text-[#7E7E7E] text-start">Carton%</p>
+            <p className="text-[13px] text-[#7E7E7E] text-start dark:text-white">100ml</p>
+            <p className="text-[13px] text-[#7E7E7E] text-start dark:text-white">70%</p>
+            <p className="text-[13px] text-[#7E7E7E] text-start dark:text-white">Carton%</p>
           </div>
         </div>
         <hr />
-        <p className="text-[15px] text-[#7E7E7E] text-start">
+        <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
           Laconic overheard dear woodchuck wow this outrageously taut beaver hey
           hello far meadowlark imitatively egregiously hugged that yikes
           minimally unanimous pouted flirtatiously as beaver beheld above
@@ -165,11 +165,11 @@ const Shop = () => {
           after jeez enchanting drunkenly more much wow callously irrespective
           limpet.
         </p>
-        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start">
+        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start dark:text-white">
           Packaging & Delivery
         </p>
         <hr />
-        <p className="text-[15px] text-[#7E7E7E] text-start">
+        <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
           Less lion goodness that euphemistically robin expeditiously bluebird
           smugly scratched far while thus cackled sheepishly rigid after due one
           assenting regarding censorious while occasional or this more crane
@@ -183,37 +183,37 @@ const Shop = () => {
           some wow and rose jeepers outgrew lugubrious luridly irrationally
           attractively dachshund.
         </p>
-        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start">
+        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start dark:text-white">
           Suggested Use
         </p>
         <div className="flex flex-col gap-[10px]">
-          <p className="text-[15px] text-[#7E7E7E] text-start">
+          <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
             Refrigeration not necessary.
           </p>
-          <p className="text-[15px] text-[#7E7E7E] text-start">
+          <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
             Stir before serving
           </p>
         </div>
-        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start">
+        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start dark:text-white">
           Other Ingredients
         </p>
         <div className="flex flex-col gap-[10px]">
-          <p className="text-[15px] text-[#7E7E7E] text-start">
+          <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
             Organic raw pecans, organic raw cashews.
           </p>
-          <p className="text-[15px] text-[#7E7E7E] text-start">
+          <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
             This butter was produced using a LTG (Low Temperature Grinding)
             process
           </p>
-          <p className="text-[15px] text-[#7E7E7E] text-start">
+          <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
             Made in machinery that processes tree nuts but does not process
             peanuts, gluten, dairy or soy
           </p>
         </div>
-        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start">
+        <p className="text-[24px] text-[#253D4E] font-quicksand font-[700] text-start dark:text-white">
           Warningss
         </p>
-        <p className="text-[15px] text-[#7E7E7E] text-start">
+        <p className="text-[15px] text-[#7E7E7E] text-start dark:text-white">
           Oil separation occurs naturally. May contain pieces of shell.
         </p>
       </div>

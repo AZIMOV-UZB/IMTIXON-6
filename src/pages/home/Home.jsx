@@ -46,8 +46,8 @@ const Home = () => {
    <div>
 <Hero/>
 <Shops/>
-{products}
 <Pro/>
+{products}
 <Banner/>
 </div>
    

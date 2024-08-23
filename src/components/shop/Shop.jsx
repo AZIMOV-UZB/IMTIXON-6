@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFetch } from '@/hooks/useFetch'
 import { useEffect } from "react";
+import "./Shop.scss"
 import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { HiOutlineChevronDown } from "react-icons/hi";
@@ -10,6 +11,10 @@ import { FaRegHeart } from "react-icons/fa";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import {} from "number-brm";
 import Banner from '../banner/Banner';
+import { IoHomeOutline } from "react-icons/io5";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+
+
 const Shop = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -20,7 +25,19 @@ const Shop = () => {
       let percentageCount =
         data?.price - (data?.price * 100) / data?.discountPercentage;
   return (
-        <div className="container mt-[60px]">
+        <div className="container mx-auto -scroll-mt-96 px-5 mt-[60px]">
+          <div className='flex gap-5 mb-8 items-center'>
+            <div className='flex gap-2 items-center'>
+            <IoHomeOutline className='text-green-500	' />
+            <p  className='text-green-500	'>Home</p>
+            <MdOutlineArrowForwardIos className='text-xs'/>
+            <p  className='text-green-500	'>product</p>
+            <MdOutlineArrowForwardIos className='text-xs'/>
+            <p> Seeds of Change Organic</p>
+
+            </div>
+          </div>
+<div className='w-full h-[1px] bg-slate-200	 my-8'></div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mb-10 px-1">
         <div className="">
           <img
@@ -48,30 +65,35 @@ const Shop = () => {
           </h2>
           <div className="flex gap-6 items-baseline">
             <FaStar className="text-yellow-400" />
-            <p className="text-[#B6B6B6] text-[14px] font-[400]">
+            <p className="text-[#B6B6B6] text-[14px] font-[400] dark:text-white">
               ({data?.rating}reviews)
             </p>
           </div>
-          <div className="flex gap-2 mt-2 items-baseline">
-            <strong className=" text-[26px] sm:text-[38px] md:text-[44px] lg:text-[48px] text-[#3BB77E] font-[700]">
+          <div className="flex gap-2  items-center">
+            <div className='pt-8'>
+            <strong className=" text-[32px] sm:text-[42px] md:text-[48px] lg:text-[54px] text-[#3BB77E] font-[700]">
               ${data?.price}
             </strong>
+            </div>
+            <div className='shop__bag'>
+            <p className='mt-10  text-[#FDC040] text-xl'>{data?.discountPercentage}% off</p>
             <strong className="line-through  text-[24px] text-[#B6B6B6] font-[700] ">
               ${percentageCount.brm()}
             </strong>
+            </div>
           </div>
-          <p className="text-start text-[#7E7E7E] text-[17px]">
+          <p className="text-start text-[#7E7E7E] text-[17px] dark:text-white">
             {data?.description}
           </p>
           <div className="flex items-center gap-3">
-            <p className="text-[#7E7E7E] text-[14px]">width/height:</p>
-            <button className="w-[41px] h-[32px] hover:bg-[#3BB77E] hover:text-[#fff] rounded-[5px] text-[14px] text-[#7E7E7E]">
+            <p className="text-[#7E7E7E] text-[14px] dark:text-white">width/height:</p>
+            <button className="w-[41px] h-[32px] hover:bg-[#fc4a4a] hover:text-[#fff] rounded-[5px] text-[14px] text-[#7E7E7E]  dark:text-white">
               {data?.dimensions?.depth}
             </button>
-            <button className="w-[41px] h-[32px] hover:bg-[#3BB77E] hover:text-[#fff] rounded-[5px] text-[14px] text-[#7E7E7E]">
+            <button className="w-[41px] h-[32px] text-[#fff] hover:bg-[#ff4343] bg-[#3BB77E] hover:text-[#fff] rounded-[5px] text-[14px] text-[#7E7E7E] dark:text-white">
               {data?.dimensions?.height}
             </button>
-            <button className="w-[41px] h-[32px] hover:bg-[#3BB77E] hover:text-[#fff] rounded-[5px] text-[14px] text-[#7E7E7E]">
+            <button className="w-[41px] h-[32px] hover:bg-[#ff3a3a] hover:text-[#fff] rounded-[5px] text-[14px] text-[#7E7E7E] dark:text-white">
               {data?.dimensions?.width}
             </button>
           </div>

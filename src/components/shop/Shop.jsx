@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {memo} from 'react'
 import { useFetch } from '@/hooks/useFetch'
 import { useEffect } from "react";
 import "./Shop.scss"
@@ -244,4 +244,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default memo(Shop)

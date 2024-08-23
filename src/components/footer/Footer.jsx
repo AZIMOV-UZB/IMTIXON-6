@@ -33,7 +33,7 @@ const Footer = () => {
     </div>
     <div>
         <p className='footer__top__title dark:text-black'>Best prices & offers</p>
-        <p className='footer__top__text dark:text-black dark:text-black'>Orders $50 or more</p>
+        <p className='footer__top__text  dark:text-black'>Orders $50 or more</p>
     </div>
 </div>
 

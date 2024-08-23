@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header mb-32">
+    <div className="header mb-32 py-1">
       <div className=' container mx-auto px-5'>
         <nav className="navbar 
          flex items-center justify-between">
@@ -60,10 +60,10 @@ const Header = () => {
             
           </div>
           <div className={`nav__collect ${isMenuOpen ? "show" : ""}  dark:bg-black dark:text-white`}>
-            <div onClick={toggleMenu} className="navbar__menu cursor-pointer text-2xl text-white">
+            <div onClick={toggleMenu} className="navbar__menu  cursor-pointer text-2xl text-white">
           <LuDelete  className='text-4xl text-right'/>
           </div>
-            <ul className="navbar__collection flex gap-4 dark:text-white dark:bg-black p-2 	">
+            <ul className="navbar__collection flex gap-4   dark:text-white dark:bg-black p-3 	">
               <NavLink className={" text-black dark:text-white  flex gap-1 items-center"} to={"/wishlist"}>
               <FaRegHeart  className='text-2xl'/><sup className='px-1 py-2 rounded-full mb-3 text-white bg-lime-600'>0</sup>
              <p className='text-xs'> Wishlist</p>

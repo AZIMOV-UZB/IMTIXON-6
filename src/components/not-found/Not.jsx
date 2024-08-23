@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{memo} from 'react'
 import "./Not-found.scss"
 const Not = () => {
   return (
@@ -6,4 +6,4 @@ const Not = () => {
   )
 }
 
-export default Not
+export default memo(Not)

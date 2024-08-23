@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {memo} from 'react'
 import "./Shops.scss"
 import karom from '../../assets/karom.svg'
 import red from '../../assets/red.svg'
@@ -10,6 +10,7 @@ import choko from '../../assets/choko.svg'
 import black from '../../assets/black.svg'
 import band from '../../assets/band.svg'
 import kivi from '../../assets/kivi.svg'
+import { memo } from "react"
 const Shops = () => {
   return (
     <div className='Shops container mx-auto px-5 mt-10'>
@@ -97,4 +98,4 @@ const Shops = () => {
   )
 }
 
-export default Shops
+export default memo(Shops)

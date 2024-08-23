@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{memo}from 'react'
 import  './Pro.scss'
 const Pro = () => {
   return (
@@ -29,4 +29,4 @@ Products</p>
   )
 }
 
-export default Pro
+export default memo(Pro)

@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{memo} from 'react'
 import "./Banner.scss"
 import banner from '../../assets/banner.svg'
 import { IoMdPaperPlane } from "react-icons/io";
@@ -30,4 +30,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default memo(Banner)

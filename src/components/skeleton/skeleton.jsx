@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{memo} from "react";
 
 const Skeleton = () => {
   const skeletonItems = new Array(10).fill().map((_, idx) => (
@@ -17,4 +17,4 @@ const Skeleton = () => {
   );
 };
 
-export default Skeleton;
+export default memo(Skeleton);

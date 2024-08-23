@@ -48,7 +48,7 @@ const Shop = () => {
           <div className="flex">
             {data?.images?.map((item, inx) => (
               <img
-                className="w-[50px] h-[50px] object-contain m-auto    cursor-pointer"
+                className="w-[90px] bg-slate-100	rounded-2xl	p-2  h-[90px] object-contain m-auto    cursor-pointer"
                 src={item}
                 key={inx}
                 alt="foto"

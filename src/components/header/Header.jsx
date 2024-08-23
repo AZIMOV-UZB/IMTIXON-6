@@ -54,8 +54,10 @@ const Header = () => {
 
             <select className='outline-none	 dark:text-white dark:bg-black ' name="" id="">
               <option value="">Your Location</option>
-              <option value="">Your Location</option>
-              <option value="">Your Location</option>
+              <option value="">Toshkent</option>
+              <option value="">Samarqand</option>
+              <option value="">Qashqadaryo</option>
+              <option value="">Jizzah</option>
             </select>
             
           </div>

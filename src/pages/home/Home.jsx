@@ -17,12 +17,12 @@ const Home = () => {
   const { data: categories } = useFetch("/products/category-list");
 
   const products = (
-    <div className="container py-4 mt-10">
-      <ul className="flex whitespace-nowrap overflow-x-auto scroll-none gap-4">
+    <div className="container  py-4 mt-10">
+      <ul className="category flex whitespace-nowrap ul__text  overflow-x-auto scroll-none gap-4 ">
         <li>
           <button
             onClick={() => setCategory("")}
-            className="px-4 py-1 bg-green-500 rounded-3xl text-white"
+            className="px-4 py-1 bg-green-500 ul__text rounded-3xl text-white"
           >
             All
           </button>

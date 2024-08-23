@@ -1,0 +1,20 @@
+.products{
+}
+
+.category::-webkit-scrollbar{
+    display: none;
+  }
+
+
+    
+@media ( max-width:550px){
+    .category::-webkit-scrollbar{
+        display: block !important;
+      }
+
+      .ul__text{
+        font-size: 14px !important;
+      }
+      
+    
+}

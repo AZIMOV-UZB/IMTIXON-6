@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import images from "../../assets/Header.svg";
 const Royxar = () => {
   return (
-    <div className="continer mt-5 mb-16">
+    <div className="continer mx-auto mt-5 mb-16">
       <div className="w-[330px] sm:w-[400px] md:w-[400px] lg:w-[400px] border h-[480px] rounded-[5px] m-auto p-[15px] sm:p-[31px] md:p-[31px] lg:p-[31px] flex flex-col gap-[25.87px]">
         <div className="w-full">
           <img className="flex m-auto" src={images} alt="foto" />

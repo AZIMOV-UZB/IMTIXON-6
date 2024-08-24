@@ -11,7 +11,7 @@ const Skeleton = () => {
     </div>
   ));
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2  mt-10">
+    <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 rounded-ls lg:grid-cols-5 gap-2  mt-10">
       {skeletonItems}
     </div>
   );

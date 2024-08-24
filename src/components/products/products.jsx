@@ -1,12 +1,15 @@
-import React,{memo} from "react";
-import { IoCartOutline } from "react-icons/io5";
+import React from "react";
 import { FaStar } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 import {} from "number-brm";
-import "./Products.scss"
 import { Link } from "react-router-dom";
+import { FaHeart } from "react-icons/fa";
+import { useStateValue } from "../context/Index";
+
 
 const Products = ({ data, title }) => {
-  console.log(data);
+  // const [{ wishlist }, dispatch] = useStateValue();
+  // console.log(data);
 
   let items = data?.map((product) => {
     let percentageCount =
@@ -23,13 +26,13 @@ const Products = ({ data, title }) => {
           </Link>
         </div>
         <div className="flex flex-col gap-2 p-[5px_0_25px_16px] items-start justify-end">
-          <p className="text-start text-[15px] text-[#ADADAD]">
+          <p className="text-start text-[12px] text-[#ADADAD]">
             {product.category}
           </p>
-          <p className="text-[16px] font-[700] text-[#253D4E] text-start dark:text-white">
-            {product.title.slice(0, 25)}...
+          <p className="text-[16px] font-[700] text-[#253D4E] text-start">
+            {product.title.slice(0, 20)}...
           </p>
-          <div className="flex gap-6  items-center">
+          <div className="flex gap-6 items-baseline">
             <FaStar className="text-yellow-400" />
             <p className="text-[#B6B6B6] text-[14px] font-[400]">
               ({product.rating})
@@ -40,8 +43,18 @@ const Products = ({ data, title }) => {
               New
             </button>
           </div>
+          <div className="absolute top-0 right-0">
+            <button
+              onClick={() =>
+                dispatch({ type: "ADD_TO_WISHLIST", payload: product })
+              }
+              className="rounded-[0_20px_0_15px] px-[10px] text-[12px] text-[#fff]"
+            >
+              <FaHeart className="text-black text-[20px] mt-2 mr-1" />
+            </button>
+          </div>
           <div>
-            <div className="flex gap-1">
+            <div className="flex">
               <p className="text-[#B6B6B6] text-[14px]">By</p>
               <p className="text-[#3BB77E] text-[14px] font-[400]">
                 {" "}
@@ -57,7 +70,10 @@ const Products = ({ data, title }) => {
                   ${percentageCount.brm()}
                 </strong>
               </div>
-              <button className="border bg-[#DEF9EC] py-[2px] px-[10px] text-[#fff] flex items-center rounded-[4px] dark:bg-black">
+              <button
+                onClick={() => dispatch({ type: "CART", payload: product })}
+                className="border bg-[#DEF9EC] py-[2px] px-[10px] text-[#fff] flex items-center rounded-[4px]"
+              >
                 <IoCartOutline className="text-[#3BB77E]" />{" "}
                 <p className="text-[13px] text-[#3BB77E] font-[500]">Add</p>
               </button>
@@ -68,13 +84,13 @@ const Products = ({ data, title }) => {
     );
   });
   return (
-    <div className="container mx-auto px-5">
+    <div className="container px-5  mx-auto">
       <h3 className="text-2xl font-bold mb-10 mt-10">{title}</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
         {items}
       </div>
     </div>
   );
 };
 
-export default memo(Products);
+export default Products;

@@ -10,6 +10,7 @@ import Admin from './pages/admin/Admin'
 import Prof from "./pages/admin/Profil";
 import User from "./pages/admin/User";
 import Auth from './components/auth/Auth'
+import NewCart from './pages/cart/new-cart'
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/" element={<Layout/>}>
         <Route path="" element={<Home/>}/>
         <Route path="products/:id" element={<Shop/>}/>
-        <Route path="wishlist" element={<Wishlist/>}/>
+        <Route path="/wishlist" element={<Wishlist/>}/>
+        <Route path="/card" element={<NewCart/>}/>
         <Route path="login" element={<Login/>}/>
         <Route path="*" element={<Not/>}/>
         <Route path="/" element={<Auth/>} >

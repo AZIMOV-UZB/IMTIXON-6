@@ -71,7 +71,7 @@ const Header = () => {
              <p className='text-xs'> Wishlist</p>
               </NavLink>
 
-              <NavLink className={" text-black dark:text-white  flex gap-0 items-center"} to={"/wishlist"}>
+              <NavLink className={" text-black dark:text-white  flex gap-0 items-center"} to={"/card"}>
               <IoCartOutline  className='text-2xl'/>
 <sup className='px-1 py-2 rounded-full
  mb-3
